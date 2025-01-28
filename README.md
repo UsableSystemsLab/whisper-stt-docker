@@ -22,9 +22,7 @@ docker build -t whisper-app .
 docker run -it --rm -v ~/Desktop:/app/audio whisper-app python transcribe.py /app/audio/sample-audio.wav
 ```
 
-Explanation:
-The command `docker run --rm -v ~/Desktop:/app/audio -m 4g whisper-stt python transcribe.py /app/audio/sample-audio.wav` does the following:
-
+##### Explanation:
 - `docker run`: Runs a new Docker container.
 - `--rm`: Automatically removes the container when it exits.
 - `-v ~/Desktop:/app/audio`: Mounts the `~/Desktop` directory on your host machine to the `/app/audio` directory in the container to allow the container to access files from your Desktop.
