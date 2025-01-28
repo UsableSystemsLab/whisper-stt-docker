@@ -19,7 +19,7 @@ git clone https://github.com/UsableSystemsLab/whisper-stt-docker.git
 
 ```shell
 docker build -t whisper-app .
-docker run -it --rm -v ~/Desktop:/app/audio whisper-app python transcribe.py /app/audio/sample-audio.wav
+docker run -it --rm -m 4g -v ~/Desktop:/app/audio whisper-app python transcribe.py /app/audio/sample-audio.wav
 ```
 
 ##### Explanation:
