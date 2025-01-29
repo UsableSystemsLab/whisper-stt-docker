@@ -3,8 +3,10 @@ import io
 import soundfile as sf
 import whisper
 import os
+import sys
 from pydub import AudioSegment
 
+sys.stdout.reconfigure(encoding='utf-8')
 
 print("loading model ...")
 model = whisper.load_model("medium", weights_only=True)

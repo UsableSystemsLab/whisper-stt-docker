@@ -35,8 +35,6 @@ venv.bak/
 
 # Docker
 *.dockerignore
-Dockerfile
-docker-compose.yml
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
