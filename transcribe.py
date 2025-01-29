@@ -9,7 +9,7 @@ from pydub import AudioSegment
 sys.stdout.reconfigure(encoding='utf-8')
 
 print("loading model ...")
-model = whisper.load_model("medium", weights_only=True)
+model = whisper.load_model("medium", language="ar")
 print("model loaded.")
 
 def transcribe(audio_file):
